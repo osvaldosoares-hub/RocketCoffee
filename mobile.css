@@ -1,0 +1,120 @@
+.mobile , .mobile1{
+    visibility: hidden;
+}
+.navigation2{
+    height: 0;
+    visibility: hidden;
+}
+.section{
+    visibility: hidden;
+    height: 0;
+}
+
+@media(max-width:700px){
+    body{
+        background-image: none;
+    }
+    .header{
+        height: 100px;
+        display: flex;
+        margin: 0;
+        align-items: center;
+        
+    }
+    .mobile{
+        visibility: visible;
+        cursor: pointer;
+        position: relative;
+        left: 40px;
+        width: 160px;
+    }
+    .mobile1{
+        visibility: visible;
+        width: 40px;
+        position: relative;
+        right: 40px;
+    }
+    .Button-head ,.desktop{
+        visibility: hidden;
+    }
+    .section.open{
+        visibility: hidden;
+        height: 0;
+    }
+    .section{
+        visibility: visible;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 200px;
+        margin-bottom: 40px;
+    }
+    .section h1{
+        color: white;
+        font-size: 30px;
+        width: 50%;
+    }
+    .section .Button-section{
+        margin: 20px 0 20px 0;
+        padding: 10px  35px ;
+        background: none;
+        border: 1px solid var(--button);
+        font-family: 'Manrope', sans-serif;
+        border-radius: 10px;
+        color:  var(--text-color);
+        cursor: pointer;
+    }
+    .mobile{
+        opacity: 1;
+    }
+    .navagation1{
+        visibility: hidden;
+        width: 0;
+    }
+    .navigation2{
+        visibility: hidden;
+        width: 0;
+        height: 0;
+    }
+    .container-main.open{
+        visibility: hidden;
+        height: 0;
+    }
+    .navigation2.open{
+        
+        visibility: visible;
+        width: 94%;
+        
+        background-color: black;
+        
+    }
+    .links{ 
+        display: flex;
+        align-items: flex-start;
+        visibility: hidden;
+        width: 100%;
+    }
+    .link {
+        display: flex;
+        padding: 0;
+        flex-direction: column;
+        
+    }
+  
+    
+    .link li{
+        
+        border: 0.5px solid var(--border-menu-mobile);
+        
+        width: 100%;
+        padding: 20px 20px 20px 10px;
+    }
+    .link li:hover{
+        border-left: 4px solid #8257E5;
+        
+    }
+    .imagem-prin{
+        width: 400px;
+    }
+}
